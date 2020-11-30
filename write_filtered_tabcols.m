@@ -12,12 +12,10 @@ function nrows = write_filtered_tabcols(file,rows,varargin)
 %    the return value is the number of data items written.
 
 % GISTIC software version 2.0
-% Copyright (c) 2011,2014 Gad Getz, Rameen Beroukhim, Craig Mermel, 
-% Jen Dobson, Steve Schumacher, Nico Stransky, Mike Lawrence, 
-% Gordon Saksena
+% Copyright (c) 2011-2017 Gad Getz, Rameen Beroukhim, Craig Mermel,
+% Jen Dobson, Steve Schumacher, Nico Stransky, Mike Lawrence, Gordon Saksena
 % All Rights Reserved.
-%
-% See the accompanying file LICENSE.txt for licensing details.
+% (See the accompanying LICENSE file for licensing details.)
 
 nrows = 0;
 

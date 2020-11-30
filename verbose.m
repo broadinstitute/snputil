@@ -17,35 +17,14 @@ function verbose(str,level,varargin)
 %       verbose('Today''s date is %s',10,datestr(now,'yymmdd')) displays
 %       today's date iff the VERBOSE_LEVEL is 10 or above.
 %
+%    See also: set_verbose_level
 %
-%
-%    See also SET_VERBOSE_LEVEL
-%
-%    History:
-%
-%        26 Sept 07:  Changed disp to fprintf to allow for escape
-%        formatting.  (Jen Dobson, jdobson@broad.mit.edu)
-%
-%        5 Nov 07:  Added regexprep for % characters so that remainder of
-%        line would not be commented out.
-%
-%        27 Nov 07:  Added option to pass formating strings.
-%
-%---
-% $Id$
-% $Date$
-% $LastChangedBy$
-% $Rev$
 
 % GISTIC software version 2.0
-% Copyright (c) 2011 Gad Getz, Rameen Beroukhim, Craig Mermel, 
-% Jen Dobson, Steve Schumacher, Nico Stransky, Mike Lawrence, 
-% Gordon Saksena, Michael O'Kelly, Barbara Tabak
+% Copyright (c) 2011-2017 Gad Getz, Rameen Beroukhim, Craig Mermel,
+% Jen Dobson, Steve Schumacher, Nico Stransky, Mike Lawrence, Gordon Saksena
 % All Rights Reserved.
-%
-% See the accompanying file LICENSE.txt for licensing details.
-
-
+% (See the accompanying LICENSE file for licensing details.)
 
 global VERBOSE_LEVEL
 global VERBOSE_FILE

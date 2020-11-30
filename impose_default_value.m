@@ -12,13 +12,10 @@ function S = impose_default_value(S,field,value,acceptable_values)
 % modified 2011-11-10 to handle accepable values
 
 % GISTIC software version 2.0
-% Copyright (c) 2011 Gad Getz, Rameen Beroukhim, Craig Mermel, 
-% Jen Dobson, Steve Schumacher, Nico Stransky, Mike Lawrence, 
-% Gordon Saksena, Michael O'Kelly, Barbara Tabak
+% Copyright (c) 2011-2017 Gad Getz, Rameen Beroukhim, Craig Mermel,
+% Jen Dobson, Steve Schumacher, Nico Stransky, Mike Lawrence, Gordon Saksena
 % All Rights Reserved.
-%
-% See the accompanying file LICENSE.txt for licensing details.
-
+% (See the accompanying LICENSE file for licensing details.)
 
 if ~isfield(S,field) || isempty(getfield(S,field))
   if ischar(value) & strcmp(value,'*required*')

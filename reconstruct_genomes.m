@@ -28,12 +28,10 @@ function [genomes segs] = reconstruct_genomes(Qs,params)
 %  See also Qs.
 
 % GISTIC software version 2.0
-% Copyright (c) 2011, 2016 Gad Getz, Rameen Beroukhim, Craig Mermel, 
-% Jen Dobson, Steve Schumacher, Nico Stransky, Mike Lawrence, 
-% Gordon Saksena
+% Copyright (c) 2011-2017 Gad Getz, Rameen Beroukhim, Craig Mermel,
+% Jen Dobson, Steve Schumacher, Nico Stransky, Mike Lawrence, Gordon Saksena
 % All Rights Reserved.
-%
-% See the accompanying file LICENSE.txt for licensing details.
+% (See the accompanying LICENSE file for licensing details.)
 
   params = impose_default_value(params,'broad_or_focal','focal');
   params = impose_default_value(params,'t_amp',0.1);

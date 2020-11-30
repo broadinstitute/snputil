@@ -22,11 +22,12 @@ function [RG miR]=make_hg_file(hg_output_fname,refgene_fname,reflink_fname, ...
 %     uint[exonCount] exonEnds;   "Exon end positions"
 %     )
 
+% GISTIC software version 2.0
+% Copyright (c) 2011-2017 Gad Getz, Rameen Beroukhim, Craig Mermel,
+% Jen Dobson, Steve Schumacher, Nico Stransky, Mike Lawrence, Gordon Saksena
+% All Rights Reserved.
+% (See the accompanying LICENSE file for licensing details.)
 
-%rg=read_table(refgene_fname,'%s%s%s%d%d%d%d%d%s%s',char(9),0);
-% It seems they added an id as first column
-%rg=read_table(refgene_fname,'%s%s%s%s%d%d%d%d%d%s%s%d%s%s%s%s',char(9),0);
-% It seems they moved back to the prev format
 if (0)
   extra_col=0;
   rg=read_table(refgene_fname,'%s%s%s%d%d%d%d%d%s%s',char(9),0);

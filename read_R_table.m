@@ -9,7 +9,12 @@ function structable = read_R_table(fname,dlm,nantext,options)
 % specifies the token used for missing numeric data, default 'NA'. Missing
 % numeric data will be signified by NaN in the struct array data.
 
-% default tab-delimited table
+% GISTIC software version 2.0
+% Copyright (c) 2011-2017 Gad Getz, Rameen Beroukhim, Craig Mermel,
+% Jen Dobson, Steve Schumacher, Nico Stransky, Mike Lawrence, Gordon Saksena
+% All Rights Reserved.
+% (See the accompanying LICENSE file for licensing details.)
+
 if ~exist('dlm','var') || isempty(dlm)
     dlm = char(9);
 end

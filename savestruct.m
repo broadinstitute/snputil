@@ -7,14 +7,11 @@ function savestruct(S,filename)
 % output file. The column headers will be the names of the fields in S.
 
 % GISTIC software version 2.0
-% Copyright (c) 2011,2014 Gad Getz, Rameen Beroukhim, Craig Mermel, 
-% Jen Dobson, Steve Schumacher, Nico Stransky, Mike Lawrence, 
-% Gordon Saksena
+% Copyright (c) 2011-2017 Gad Getz, Rameen Beroukhim, Craig Mermel,
+% Jen Dobson, Steve Schumacher, Nico Stransky, Mike Lawrence, Gordon Saksena
 % All Rights Reserved.
-%
-% See the accompanying file LICENSE.txt for licensing details.
+% (See the accompanying LICENSE file for licensing details.)
 
-%! TODO test inputs, pass filter in
 fields = fieldnames(S);
 nf = length(fields);
 cols = cell(1,nf);

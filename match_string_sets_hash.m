@@ -3,14 +3,10 @@ function [M,mi,mj,h,us1j]=match_string_sets_hash(set1,set2,h,us1j,no_sparse,use_
 %
 
 % GISTIC software version 2.0
-% Copyright (c) 2011, 2016 Gad Getz, Rameen Beroukhim, Craig Mermel, 
-% Jen Dobson, Steve Schumacher, Nico Stransky, Mike Lawrence, 
-% Gordon Saksena
+% Copyright (c) 2011-2017 Gad Getz, Rameen Beroukhim, Craig Mermel,
+% Jen Dobson, Steve Schumacher, Nico Stransky, Mike Lawrence, Gordon Saksena
 % All Rights Reserved.
-%
-% See the accompanying file LICENSE.txt for licensing details.
-
-% Fill hash with longer list, go over short list and check if it is there
+% (See the accompanying LICENSE file for licensing details.)
 
 sets_unique = 0;
 if exist('h','var') && ~isempty(h)

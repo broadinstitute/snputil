@@ -10,13 +10,10 @@ function idx=find_D_rows(D,gsupacc_name,val)
 %   field.  
 
 % GISTIC software version 2.0
-% Copyright (c) 2011 Gad Getz, Rameen Beroukhim, Craig Mermel, 
-% Jen Dobson, Steve Schumacher, Nico Stransky, Mike Lawrence, 
-% Gordon Saksena, Michael O'Kelly, Barbara Tabak
+% Copyright (c) 2011-2017 Gad Getz, Rameen Beroukhim, Craig Mermel,
+% Jen Dobson, Steve Schumacher, Nico Stransky, Mike Lawrence, Gordon Saksena
 % All Rights Reserved.
-%
-% See the accompanying file LICENSE.txt for licensing details.
-
+% (See the accompanying LICENSE file for licensing details.)
 
 gsupid=strmatch(gsupacc_name,D.gsupacc,'exact');
 if length(gsupid)~=1

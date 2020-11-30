@@ -15,34 +15,10 @@ function D=reorder_D_rows(D,varargin)
 %   compatibility).
 
 % GISTIC software version 2.0
-% Copyright (c) 2011 Gad Getz, Rameen Beroukhim, Craig Mermel, 
-% Jen Dobson, Steve Schumacher, Nico Stransky, Mike Lawrence, 
-% Gordon Saksena, Michael O'Kelly, Barbara Tabak
+% Copyright (c) 2011-2017 Gad Getz, Rameen Beroukhim, Craig Mermel,
+% Jen Dobson, Steve Schumacher, Nico Stransky, Mike Lawrence, Gordon Saksena
 % All Rights Reserved.
-%
-% See the accompanying file LICENSE.txt for licensing details.
-
-
-%   In both usages, data structure history is updated.
-%
-%   Example:  D = reorder_D_rows(D,[1:10:size(D.dat,1)]) decimates the data 
-%                 structure, returning a new D with every 10th row (SNP) 
-%                 included.
-%
-%             D = reorder_D_rows(D,'Interesting',1) returns a new data
-%             structure consisting only of SNPs with .gsupacc  of 'Interesting'
-%             set to 1 in the .gsupdat field.
-%
-%   History
-%       -- 09 Oct 07  --- Added catch for if field exists but is empty at
-%       line 123.
-%
-%`      -- 17 Oct 07  --- Added .plat to reorder fields.
-%---
-% $Id$
-% $Date$
-% $LastChangedBy$
-% $Rev$
+% (See the accompanying LICENSE file for licensing details.)
 
 if length(varargin)==0
   error('missing argument');

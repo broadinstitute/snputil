@@ -21,46 +21,10 @@ function [M,idx1,idx2]=match_string_sets(set1,set2)
 %
 
 % GISTIC software version 2.0
-% Copyright (c) 2011, 2016 Gad Getz, Rameen Beroukhim, Craig Mermel, 
-% Jen Dobson, Steve Schumacher, Nico Stransky, Mike Lawrence, 
-% Gordon Saksena
+% Copyright (c) 2011-2017 Gad Getz, Rameen Beroukhim, Craig Mermel,
+% Jen Dobson, Steve Schumacher, Nico Stransky, Mike Lawrence, Gordon Saksena
 % All Rights Reserved.
-%
-% See the accompanying file LICENSE.txt for licensing details.
-
-
-%% Looped implementation
-% if iscell(set1)
-%   set1=strvcat(set1);
-% end
-% 
-% if iscell(set2)
-%   set2=strvcat(set2);
-% end
-% 
-% 
-% %ss12 is the set of unique strings
-% %strvcat(set1,set2) index by i12 gives ss12
-% %ss12(j12) gives strvcat(set1,set2)
-% [ss12,i12,j12] = lunique([ strvcat(set1, set2) ],'rows'); 
-% n1=size(set1,1);
-% n2=size(set2,1);
-% %ss12 is the minimal list of words
-% 
-
-%M=sparse(n1,n2);
-% for i=1:size(ss12,1)
-%   idx=find(j12==i); %locations in strvcat containing the ith word
-%     
-%   idx1=find(idx<=n1);% locations in idx that correspond to set1 
-%   idx2=find(idx>n1);% locations in idx that correspond to set2
-%     
-%   if ~isempty(idx1) & ~isempty(idx2)
-%     M(idx(idx1),idx(idx2)-n1)=1; %array with 1 and zeros where word in set1 matches word in set2
-%   end
-% end
-
-%% Repmat (faster) implementation
+% (See the accompanying LICENSE file for licensing details.)
 
 if ischar(set1)
     set1 = cellstr(set1);
