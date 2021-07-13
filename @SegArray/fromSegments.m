@@ -32,15 +32,11 @@ function S = fromSegments(B,E,C,V,F,M,N,TOL)
 %   overwrite earlier ones. 
 
 % GISTIC software version 2.0
-% Copyright (c) 2011 Gad Getz, Rameen Beroukhim, Craig Mermel, 
-% Jen Dobson, Steve Schumacher, Nico Stransky, Mike Lawrence, 
-% Gordon Saksena, Michael O'Kelly, Barbara Tabak
+% Copyright (c) 2011-2017 Gad Getz, Rameen Beroukhim, Craig Mermel,
+% Jen Dobson, Steve Schumacher, Nico Stransky, Mike Lawrence, Gordon Saksena
 % All Rights Reserved.
-%
-% See the accompanying file LICENSE.txt for licensing details.
+% (See the accompanying LICENSE file for licensing details.)
 
-
-% validate mandatory segment row begin/end arguments
 if ~exist('B','var') || isempty(B) || ~exist('E','var') || isempty(E)
     throwAsCaller(MException('MATLAB:SEGARRAY:missingArg',...
                              'SEGARRAY.fromSegment requires begin and end row arguments.'));

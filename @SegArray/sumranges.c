@@ -3,8 +3,16 @@
   A Matlab function for supporting the SegArray class:
 
       values = sumranges(B,E,V,size)
-
 */
+
+/*
+% GISTIC software version 2.0
+% Copyright (c) 2011-2017 Gad Getz, Rameen Beroukhim, Craig Mermel,
+% Jen Dobson, Steve Schumacher, Nico Stransky, Mike Lawrence, Gordon Saksena
+% All Rights Reserved.
+% (See the accompanying LICENSE file for licensing details.)
+*/
+
 #include <string.h>
 #include "mex.h"
 /*#include "matrix.h"
@@ -44,7 +52,7 @@ void mexFunction(int nlhs, mxArray *plhs[ ], int nrhs, const mxArray *prhs[ ])
     int start = ((int)pStarts[i])-1;
     int end = ((int)pEnds[i])-1;
     if( start >= Nout || end >= Nout )
-      mexErrMsgTxt("sumranges index exceeds size ouf output");
+      mexErrMsgTxt("sumranges index exceeds size of output");
     int j;
     for( j=start; j<=end; j++) {
       poutvals[j] += pValues[i];

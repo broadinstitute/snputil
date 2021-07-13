@@ -13,20 +13,10 @@ classdef (InferiorClasses = {?double,?single,?logical,?char}) SegArray
 %   for other ways to make SegArrays.
 
 % GISTIC software version 2.0
-% Copyright (c) 2011 Gad Getz, Rameen Beroukhim, Craig Mermel, 
-% Jen Dobson, Steve Schumacher, Nico Stransky, Mike Lawrence, 
-% Gordon Saksena, Michael O'Kelly, Barbara Tabak
+% Copyright (c) 2011-2017 Gad Getz, Rameen Beroukhim, Craig Mermel,
+% Jen Dobson, Steve Schumacher, Nico Stransky, Mike Lawrence, Gordon Saksena
 % All Rights Reserved.
-%
-% See the accompanying file LICENSE.txt for licensing details.
-
-
-%  4 Mar 08 -- jdobson@broad.mit.edu
-% $HeadURL: https://svnrepos/CancerGenomeAnalysis/trunk/matlab/@SegArray/SegArray.m $
-% $Id: SegArray.m 82881 2016-04-13 20:24:40Z schum $
-% $Rev: 82881 $
-% $LastChangedBy: schum $ @broadinstitute.org
-% $Date: 2016-04-13 16:24:40 -0400 (Wed, 13 Apr 2016) $
+% (See the accompanying LICENSE file for licensing details.)
 
     properties (SetAccess = 'public', GetAccess = 'public')
         vals = [];  % breakpoint values and their class

@@ -1,12 +1,24 @@
-/* Mex/C inplementation of cosort 2012-09-05 Steven Schumacher DFCI */
+/* Mex/C implementation of cosort 2012-09-05 Steven Schumacher DFCI */
 /*
   A Matlab function for supporting the SegArray class:
 
       [group val index] = cosort(v1,...,vN)
 
-  where inputs v1,...,vN are a series of already sorted double vectors (typically indices
-  of SegArray breakpoints
+  where inputs v1,...,vN are a series of already-sorted double vectors (indices
+  of SegArray breakpoints. The returned column vectors have the length of the 
+  combined input vectors. _val_ contains the sorted values; _group_ and _index_
+  contain which input vector (1...N) the value came from and that value's position 
+  within the input vector.
 */
+
+/*
+% GISTIC software version 2.0
+% Copyright (c) 2011-2017 Gad Getz, Rameen Beroukhim, Craig Mermel,
+% Jen Dobson, Steve Schumacher, Nico Stransky, Mike Lawrence, Gordon Saksena
+% All Rights Reserved.
+% (See the accompanying LICENSE file for licensing details.)
+*/
+
 #include <string.h>
 #include "mex.h"
 #include "matrix.h"
